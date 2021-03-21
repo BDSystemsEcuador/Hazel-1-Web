@@ -5,12 +5,15 @@
 body{
     margin: 0;
     padding: 0;
+    height: max-content;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
 }
 img{
     width: 100%;
     object-fit: cover;
+}
+section{
+    margin: 60px 0 !important;
 }
 .container{
     width: 90%;
@@ -18,7 +21,7 @@ img{
     margin: auto;
 }
 .header{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 100vh;
@@ -45,7 +48,7 @@ img{
     left: 50%;
     margin: 20px 0;
     transform: translateX(-50%);
-    z-index: 9999999;
+    z-index: 999999999999;
 }
 .nav__logo{
     width: max-content;
@@ -59,11 +62,12 @@ img{
 .nav__icon:hover{
     color:rgb(145, 143, 143);
 }
+
 .menu-show, .menu-show-pages{
     background-color: white;
     padding:0;
     position: absolute;
-    top: 20px;
+    top: 27px;
     left:50%;
     transform: translateX(-50%) scaleY(0);
     width: 100%;
@@ -74,7 +78,6 @@ img{
 }
 .menu-show2{
     transform: translateX(-50%) scaleY(1);
-    z-index: 999999;
 }
 
 .menu__list{
@@ -82,7 +85,7 @@ img{
     padding:0;
     width: 100%;
 }
-.menu__list a{
+.menu__link{
     text-decoration: none;
     color: black;
     display: block;
@@ -94,7 +97,7 @@ img{
     font-weight: 400;
     font-size: .8em;
 }
-.menu__list a:hover{
+.menu__link a:hover{
     background-color: black;
     color:white;
 }
@@ -142,4 +145,158 @@ img{
     font-size: .7em;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.menu-mostrar{
+    transform: translateX(-50%) scaleY(1);
+    z-index: 0;
+}
+.menu-show2{
+    transform: translateX(-50%) scaleY(1);
+
+}
+
+.main{
+    margin: 20px auto;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin: 20px auto;
+}
+.services__service{
+    padding: 20px;
+    width: 100%;
+}
+.services__icon{
+    font-size: 2em;
+}
+.services__title{
+    font-size: 1em;
+    font-weight: bold;
+}
+.services__txt{
+    font-size: 1em;
+    font-weight: 400;
+}
+.work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.work__txt{
+    margin-bottom: 20px;
+}
+.work__title{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.work__description{
+    font-size: .9em;
+    color: rgb(36, 36, 36);
+}
+.work--link{
+    display: block;
+    width: max-content;
+    margin: 20px 0;
+    background-color: transparent;
+    color: black;
+}
+.work--link:hover{
+    background-color: black;
+    color: white;
+}
+.nav-color{
+    transition: all .5s ease-in-out;
+}
+.nav-color-apply{
+    transition: all .2s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 63px;
+    position: fixed;
+    z-index: 99999999;
+
+}
+.nav-show-apply{
+    color: white;
+}
+@media screen and (min-width:680px){
+    .header__txt {
+        font-size: 1.4em;
+    }
+    .header__link{
+        margin: 20px auto;
+    }
+    .header__link{
+        font-size: .8em;
+        width: 20%;
+    }
+ 
+    .services__service{
+        width: 33.3%;
+    }
+    .work__txt{
+        width: 50%;
+        padding-right: 30px;
+        text-align: justify;
+        margin-bottom: 0;
+    }
+    .work--link{
+        margin: 0;
+        width: max-content;
+    }
+    .work__img{
+        width: 50%;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .nav__icon::before{
+        display: none;
+    }
+    .logo__box{
+        width: 30%;
+    }
+    .menu-show{
+        transform: scale(1);
+        background-color: transparent;
+        margin: 0;
+        position: static;
+        width: max-content;
+    }
+    .menu__list{
+        display: inline-block;
+        width: max-content;
+    }
+    .menu__list:first-child .menu__link{
+        margin-left: 0;
+    }
+    .menu__link{
+        padding: 0;
+        width: max-content;
+        margin-left: 30px;
+    }
+
+    .fa-chevron-right, .fa-chevron-right::before{
+        display: none;
+        visibility: hidden;
+        margin: 0;
+
+    }
+
+}
+@keyframes mover{
+    0%{
+        transform: scale(0);
+    }
 }

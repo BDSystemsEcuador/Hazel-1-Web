@@ -10,28 +10,33 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav container">
-            <img class="nav__logo" src="img/logo_dark-2.png" alt="" srcset="">
-            <i class="fas fa-bars nav__icon" id="menu"></i>
-            <ul class="menu-show" id="menu-show">
-                <li class="menu__list"><a href="#" class="menu__link">Home <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a class="menu__link" id="btn-pages">Pages <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Shortcodes <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Portafolio <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Blog <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Shop <i class="fas fa-chevron-right"></i></a></li>
-            </ul>
-            <ul class="menu-show-pages" id="menu-pages">
-                <li class="menu__list"><a href="#" class="menu__link">Atras <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Página 1 <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Página 2 <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Página 3 <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Página 4 <i class="fas fa-chevron-right"></i></a></li>
-                <li class="menu__list"><a href="#" class="menu__link">Página 5 <i class="fas fa-chevron-right"></i></a></li>
-            </ul>
-        </nav>
+        <div class="nav-color" id="nav-color">
+            <nav class="nav container">
+                <div class="logo__box">
+                    <img class="nav__logo" src="img/logo_dark-2.png" alt="" srcset="" id="logo">
+                </div>
+                <i class="fas fa-bars nav__icon" id="menu"></i>
+                <ul class="menu-show " id="menu-show">
+                    <li class="menu__list"><a href="#" class="menu__link">Home<i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a class="menu__link" id="btn-pages">Pages<i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Shortcodes<i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Portafolio<i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Blog<i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Shop<i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+                <ul class="menu-show-pages" id="menu-pages">
+                    <li class="menu__list"><a href="#" class="menu__link">Atras <i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Página 1 <i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Página 2 <i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Página 3 <i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Página 4 <i class="fas fa-chevron-right"></i></a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Página 5 <i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
         <img class="header__img" src="img/header__img.jpg" alt="">
-        <div class="header__txt container">
+        <div class="header__txt container" id="header-txt">
             <span class="header__span">A MINIMALIST WORDPRESS THEME </span>
             <h2 class="header__title">WELCOME TO HAZEL</h2>
             <div class="header__links">
@@ -41,6 +46,37 @@
             </div>
         </div>
     </header>
+    <main class="main container">
+        <section class="services">
+            <div class="services__service" id="animacion">
+                <i class="fas fa-pencil-ruler services__icon"></i>
+                <h2 class="services__title">CLEAN DESIGN</h2>
+                <p class="services__txt">Professionally repurpose premium rather than magnetic bandwidth.</p>
+            </div>
+            <div class="services__service" id="animacion2" >
+                <i class="fab fa-digital-ocean services__icon"></i>
+                <h2 class="services__title">CLEAN DESIGN</h2>
+                <p class="services__txt">Professionally repurpose premium rather than magnetic bandwidth.</p>
+            </div>
+            <div class="services__service" id="animacion3">
+                <i class="fas fa-tape services__icon"></i>
+                <h2 class="services__title">CLEAN DESIGN</h2>
+                <p class="services__txt">Professionally repurpose premium rather than magnetic bandwidth.</p>
+            </div>
+        </section>
+        <section class="work">
+            <div class="work__txt">
+                <h2 class="work__title">WE WORK HARD</h2>
+                <p class="work__description">Intrinsicly engineer one-to-one partnerships with error-free customer service. Competently optimize goal-oriented technology via low-risk high-yield materials engage.
+
+                    Energistically develop client-centered web services without focused data. Conveniently syndicate leveraged scenarios.
+                </p>
+                <a href="#" class="header__link work--link">OUTSTANDING FEATURES</a>
+            </div>
+            <img src="img/mockup2.png" alt="" class="work__img">
+        </section>
+    </main>
     <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
